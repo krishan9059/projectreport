@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="order-form-container">
+  <h2>Order your fav Krissh X item</h2>
+  <form action="#" method="POST">
+    <!-- Product Selection -->
+    <label for="product">Select Product:</label>
+    <select id="product" name="product" required>
+      <option value="">Choose an item</option>
+      <option value="item1">Krishh X phantom</option>
+      <option value="item2">Krishh X fav 2</option>
+      <option value="item3">Krishh X fav</option>
+      <option value="item4">Krishh X dark knight</option>
+      <option value="item4">Krishh X demon</option>
+      <option value="item6">Krishh X skull
+      </option>
+      <option value="item4">Krishh X demon 2</option>
+      <option value="item4">Krishh X cool</option>
+      <option value="item4">Krishh X Killer</option>
+    </select>
+
+    <!-- Quantity -->
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <!-- Customer Information -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <!-- Payment Option -->
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+      <option value="credit_card">Credit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="cod">Cash on Delivery</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button><a href="orderplaced.html">Place Order</button>
+  </form>
+</div>
+
+</body>
+</html>
